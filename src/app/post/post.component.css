@@ -1,0 +1,15 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: solid 1px black;
+}
+
+.title {
+  margin: 0;
+  font-size: 35px;
+}
+
+.thoughts {
+  font-size: 18px;
+}

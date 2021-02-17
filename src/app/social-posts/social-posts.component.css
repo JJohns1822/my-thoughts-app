@@ -1,0 +1,10 @@
+body,
+h1,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.post-container {
+  background-color: lightslategray;
+}
