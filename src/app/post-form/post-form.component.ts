@@ -10,8 +10,6 @@ import { Post } from '../interfaces/post';
 export class PostFormComponent implements OnInit {
   @Output() submitted = new EventEmitter<Post>();
 
-  isShowDiv = true;
-
   constructor() {}
 
   ngOnInit(): void {}
@@ -23,8 +21,4 @@ export class PostFormComponent implements OnInit {
     };
     this.submitted.emit(newPost);
   };
-
-  toggleDisplayDiv() {
-    this.isShowDiv = !this.isShowDiv;
-  }
 }

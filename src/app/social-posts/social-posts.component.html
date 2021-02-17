@@ -1,4 +1,5 @@
-<app-post-form (submitted)="onSubmit($event)"></app-post-form>
+<button (click)="toggleForm()">Show Form</button>
+<app-post-form (submitted)="onSubmit($event)" *ngIf="showForm"></app-post-form>
 <ol class="post-container">
   <app-post
     *ngFor="let post of myPosts; index as i"

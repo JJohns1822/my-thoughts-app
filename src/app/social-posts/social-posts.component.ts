@@ -18,14 +18,22 @@ export class SocialPostsComponent implements OnInit {
     },
   ];
 
+  showForm: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}
+
   onSubmit = (post: Post) => {
     this.myPosts.unshift(post);
+    this.toggleForm();
   };
 
   onDelete = (index: number): void => {
     this.myPosts.splice(index, 1);
+  };
+
+  toggleForm = () => {
+    this.showForm = !this.showForm;
   };
 }
