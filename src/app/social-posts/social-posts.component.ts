@@ -9,12 +9,28 @@ import { Post } from '../interfaces/post';
 export class SocialPostsComponent implements OnInit {
   myPosts: Post[] = [
     {
-      title: 'I am hungry',
-      thoughts: 'If I had a cheeseburger right now I would be soooooo happy',
+      title: 'Go Grocer Shopping',
+      thoughts: 'Remember paper towel',
     },
     {
-      title: 'How far away are the stars?',
-      thoughts: 'Probably pretty far',
+      title: 'Mow the Lawn',
+      thoughts: 'Pickup gas first',
+    },
+    {
+      title: 'File Taxes',
+      thoughts: 'Due April 26th',
+    },
+    {
+      title: 'Study For Exam',
+      thoughts: 'Make cue cards',
+    },
+    {
+      title: 'Do Laundry',
+      thoughts: 'Air dry your new sweater',
+    },
+    {
+      title: 'Walk the Dog',
+      thoughts: 'Bring poop bags',
     },
   ];
 

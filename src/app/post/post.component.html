@@ -1,11 +1,11 @@
-<li>
+<li class="list">
   <div class="list-item">
     <div class="thought-div">
       <p class="title">{{ postObject.title }}</p>
-      <p class="thoughts">{{ postObject.thoughts }}</p>
+      <p class="todo">{{ postObject.thoughts }}</p>
     </div>
     <div class="button-div">
-      <button (click)="deletePost()">X</button>
+      <button class="delete-button" (click)="deletePost()">X</button>
     </div>
   </div>
 </li>

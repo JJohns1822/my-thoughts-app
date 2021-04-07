@@ -1,15 +1,49 @@
+.list {
+}
 .list-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  border-bottom: solid 1px black;
+  width: 100%;
+  height: fit-content;
+  margin: 2.5px 0;
+  padding: 5px 10px;
+  background-color: black;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.list-item:hover {
+  background-color: rgb(27, 27, 27);
+  padding-right: 20px;
 }
 
 .title {
-  margin: 0;
-  font-size: 35px;
+  margin: 5px 20px;
+  font-size: 22px;
+  color: rgb(255, 153, 0);
+  font-weight: 700;
 }
 
-.thoughts {
-  font-size: 18px;
+.todo {
+  margin: 0 20px;
+  font-size: 16px;
+  color: lightgray;
+}
+
+.button-div {
+}
+
+.delete-button {
+  color: rgb(255, 153, 0);
+  background-color: black;
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.75s;
+}
+
+.delete-button:hover {
+  box-shadow: 0 0 15px rgb(255, 153, 0);
+}
+@media only screen and (min-width: 600px) {
 }

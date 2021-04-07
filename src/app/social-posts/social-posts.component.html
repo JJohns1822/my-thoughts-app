@@ -1,9 +1,26 @@
-<button (click)="toggleForm()">Show Form</button>
-<app-post-form (submitted)="onSubmit($event)" *ngIf="showForm"></app-post-form>
-<ol class="post-container">
-  <app-post
-    *ngFor="let post of myPosts; index as i"
-    [postObject]="post"
-    (deleted)="onDelete(i)"
-  ></app-post>
-</ol>
+<section class="body">
+  <header class="header">
+    <h1 class="page-title">JUST DO IT.</h1>
+    <img
+      class="check-mark"
+      src="assets/PinClipart.com_check-mark-clip-art_165030.png"
+      alt="check-mark"
+    />
+  </header>
+
+  <app-post-form (submitted)="onSubmit($event)" *ngIf="showForm">
+  </app-post-form>
+  <div class="button-div">
+    <button class="create-button" (click)="toggleForm()">
+      Create a new todo
+    </button>
+  </div>
+
+  <ol class="post-container">
+    <app-post
+      *ngFor="let post of myPosts; index as i"
+      [postObject]="post"
+      (deleted)="onDelete(i)"
+    ></app-post>
+  </ol>
+</section>
